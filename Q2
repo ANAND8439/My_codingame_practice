@@ -1,5 +1,4 @@
-
-
+PROGRAM:
 The game mode is REVERSE: You do not have access to the statement. You have to guess what to do by observing the following set of tests:
 01 Test 1
 Input
@@ -106,7 +105,11 @@ Expected output
  {       }\  )_\_   _
  |  \_/  |/ /  \_\_/ )
   \__/  /(_/     \__/
-    (__/import sys
+    (__/
+
+SOLUTION:
+
+import sys
 import math
 
 # Auto-generated code below aims at helping you parse
