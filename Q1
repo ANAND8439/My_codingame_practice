@@ -1,0 +1,76 @@
+Display the following symbols with respect to the "Cardinal and Ordinal Directions".
+
+NORTH: 
+*
+| 
+
+____________
+
+SOUTH:
+|
+*
+   
+____________
+
+EAST:
+----*
+
+____________
+
+WEST:
+*----
+
+____________
+
+NORTHEAST:
+ *
+/
+
+____________
+
+SOUTHWEST:
+ /
+*
+
+____________
+
+NORTHWEST:
+*
+ \
+
+____________
+
+SOUTHEAST:
+\
+ *
+Input
+A single line consisting of a string(all characters are in uppercase)
+Output
+Display the symbol with respective to the Direction.
+ChatGPT
+ChatGPT
+Here's how you can implement a Python script to display the symbols based on cardinal and ordinal directions, given an input direction:
+
+python
+Copy code
+def display_direction_symbol(direction):
+    symbols = {
+        'NORTH': ['*', '|'],
+        'SOUTH': ['|', '*'],
+        'EAST': ['----*'],
+        'WEST': ['*----'],
+        'NORTHEAST': [' *\n/'],
+        'SOUTHEAST': ['\\\n *'],
+        'NORTHWEST': ['*\n \\'],
+        'SOUTHWEST': ['/\n *']
+    }
+    
+    if direction in symbols:
+        for line in symbols[direction]:
+            print(line)
+    else:
+        print("Direction not recognized.")
+
+# Example usage:
+direction = input().strip()
+display_direction_symbol(direction)
